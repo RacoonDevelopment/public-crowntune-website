@@ -1,0 +1,11 @@
+User-Agent: *
+Allow: /
+Disallow: /login
+Disallow: /signup
+Disallow: /verify-email
+Disallow: /security-setup
+Disallow: /dashboard
+Disallow: /apply
+Disallow: /forgot-password
+
+Sitemap: https://crowntune.com/sitemap.xml
