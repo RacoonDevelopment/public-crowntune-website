@@ -794,11 +794,13 @@
           let t = this.options;
           ((this.options = this.#e.defaultMutationOptions(e)),
             (0, i.shallowEqualObjects)(this.options, t) ||
-              this.#e.getMutationCache().notify({
-                type: "observerOptionsUpdated",
-                mutation: this.#s,
-                observer: this,
-              }),
+              this.#e
+                .getMutationCache()
+                .notify({
+                  type: "observerOptionsUpdated",
+                  mutation: this.#s,
+                  observer: this,
+                }),
             t?.mutationKey &&
             this.options.mutationKey &&
             (0, i.hashKey)(t.mutationKey) !==
